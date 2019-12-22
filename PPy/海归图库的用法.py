@@ -16,7 +16,7 @@ turtle.left(150)  # 逆时针移动 °
 turtle.pendown()  # 移动时绘制图形,缺省时也为绘制
 turtle.goto(10, 20)  # 将画笔移动到坐标为x,y的位置
 turtle.penup()  # 移动时不绘制图形,提起笔，用于另起一个地方绘制时用
-turtle.circle(-50)  # 画圆,半径为正(负),表示圆心在画笔的左边(右边)画圆
+turtle.circle(50)  # 画圆,半径为正(负),表示圆心在画笔的左边(右边)画圆
 
 # 画笔控制命令:
 turtle.fillcolor('red')  # 绘制图形的填充颜色(箭头内部颜色)
@@ -30,9 +30,13 @@ turtle.hideturtle()  # 隐藏箭头显示
 # 全局控制命令
 turtle.clear()  # 清空turtle窗口，但是turtle的位置和状态不会改变
 turtle.reset()  # 清空窗口，重置turtle状态为起始状态
-# turtle.undo()  # 撤销上一个turtle动作(注:无法撤销reset,clear)
-# turtle.isvisible()
-# turtle.stamp()
+turtle.undo()  # 撤销上一个turtle动作(注:无法撤销reset,clear)
+turtle.isvisible()  # 返回当前turtle是否可见
+# turtle.stamp()  # 复制当前图
+# 三角形   (steps (optional) (做半径为radius的圆的内切正多边形,多边形边数为steps))
+turtle.circle(80, steps=30)
+turtle.circle(20, 80)  # 半圆
+
 
 turtle.done()
 
