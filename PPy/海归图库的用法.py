@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 
 import turtle
 
@@ -30,7 +30,7 @@ turtle.hideturtle()  # 隐藏箭头显示
 # 全局控制命令
 turtle.clear()  # 清空turtle窗口，但是turtle的位置和状态不会改变
 turtle.reset()  # 清空窗口，重置turtle状态为起始状态
-turtle.undo()  # 撤销上一个turtle动作(注:无法撤销reset,clear)
+# turtle.undo()  # 撤销上一个turtle动作(注:无法撤销reset,clear)
 # turtle.isvisible()
 # turtle.stamp()
 
