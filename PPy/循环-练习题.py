@@ -119,7 +119,89 @@
 # 结果: 9
 
 
-sum = 1
-for x in range(1, 10):
-    sum += x    # sum = sum*x
-    print('结果:', sum)
+# sum = 1
+# for x in range(1, 10):
+#     sum += x    # sum = sum+x
+#     print('结果:', sum)
+
+
+# 求和方法一:
+# sum = 0
+# for x in range(2, 10):  #
+#     sum += x
+#     print('结果为:', sum)
+
+# 求和方法二:
+# sum = 0
+# for x in range(0, 10):
+#     if x % 1 == 0:  # %取模,返回除法的余数(a % b,输出结果 1)
+#         sum += x
+#         print(sum)
+
+
+# 猜数字游戏:whlie循环
+# import random
+
+# answer = random.randint(1, 100)
+# counter = 0
+# while True:
+#     counter += 1
+#     number = int(input('请输入:'))
+#     if number < answer:
+#         print('大一点')
+#     elif number > answer:
+#         print('小一点')
+#     else:
+#         print('恭喜你猜对了!')
+#         break
+# print('你总共猜了%d次' % counter)
+# if counter > 7:
+#     print('你的智余额明显不足')
+
+
+# 嵌套循环:九九乘法表
+# for i in range(1, 10):
+#     for j in range(1, i + 1):
+#         print('%dx%d=%d' % (i, j, i*j), end='\t')
+#     print()
+
+
+# def duble_num(num):
+#     if num < 10:
+#         return ' ' + str(num)
+#     return str(num)
+
+
+# string = ""
+# for a in range(1, 10):
+
+#     for b in range(1, 10):
+#         if a < b:
+#             string += "\n"
+#             break
+#         else:
+#             string += '{}x{}={} '.format(a, b, a * b)
+
+# print(string)
+
+# for b in range(1, 10):
+
+# for a in range(1, 10):
+#     print(a)
+
+# xx = 0
+# for a in range(1, 10):
+#     xx = a
+# print(xx)
+# 输出结果为：9
+
+# xx = 0
+# for a in range(1, 10):
+#     xx = a
+#     print(xx)
+# 输出结果为：1-9
+
+
+for a in range(1, 10):
+    xx = a
+    print(xx)
